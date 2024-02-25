@@ -9,6 +9,8 @@ export default function Home(): JSX.Element {
     <Htag tag = 'header_title'>Наименование header title</Htag>
     <div style = {{padding: 10}}><Button appearance = 'primary'>Отправить</Button></div>
     <div><Button appearance = 'like'>L</Button></div>
+    <div style = {{padding: 10}}><Button appearance='ghost'>Привидение</Button></div>
+
 
 
     </>

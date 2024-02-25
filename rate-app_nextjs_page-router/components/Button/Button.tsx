@@ -7,6 +7,7 @@ export const Button = ({ appearance, children, className, ...props }: IButtonPro
         className = { cn(styles.button, className, {
             [styles.primary]: appearance === 'primary',
             [styles.like]: appearance === 'like',
+            [styles.ghost]: appearance === 'ghost',
         }
         ) }
         { ...props }
