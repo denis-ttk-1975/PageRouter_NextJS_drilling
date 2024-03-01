@@ -1,12 +1,12 @@
 import { Button, Htag, Paragraph, Tag, Rating } from '@/components';
-import { Layout } from '@/layout/Layout';
+import { withLayout } from '@/layout/Layout';
 import { useState } from 'react';
 
-export default function Home(): JSX.Element {
+function Home(): JSX.Element {
     const [rating, setRating] = useState(3);
 
   return (
-    <Layout>
+    <>
     <Htag tag = 'h1'>Page Router - старый</Htag>
     <Htag tag = 'h1'>Наименование111</Htag>
     <Htag tag = 'h2'>Наименование222</Htag>
@@ -25,7 +25,9 @@ export default function Home(): JSX.Element {
 <Tag size = 'small' color = 'primary'>Purple</Tag>
 <Tag size = 'small' color = 'grey'>Grey</Tag>
 <Rating rating = {rating} isEditable setRating={setRating} />
-    </Layout>
+    </>
 
   );
 }
+
+export default withLayout(Home);
