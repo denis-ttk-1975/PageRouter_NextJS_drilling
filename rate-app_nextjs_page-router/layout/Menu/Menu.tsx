@@ -18,6 +18,8 @@ const firstLevelMenu: FirstLevelMenuItem[] = [
 ];
 export const Menu = (): JSX.Element => {
   const { menu, firstCategory, setMenu } = useContext(AppContext);
+  console.log('firstCategory: ', firstCategory);
+  console.log('menu: ', menu);
 
   const buildFirstLevel = () => {
     return (
